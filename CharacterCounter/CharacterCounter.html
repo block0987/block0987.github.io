@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>文字数カウンタ―</title>
+    <script src="CharacterCounter.js"></script>
+    <link rel="stylesheet" type="text/css" href="../var.css">
+    <link rel="stylesheet" type="text/css" href="CharacterCounter.css">
+    <link rel="shortcut icon" type="image/svg+xml" href="../favicon.svg">
+    <meta name="description" content="文字数カウンタ―">
+    <meta name="keywords" content="文字数カウンタ―">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body>
+    <main>
+        <textarea id="textarea" placeholder="ここにテキストを入力" onkeyup="countCharacters(value);"></textarea>
+        <div class="CounterContainer">
+            <div class="Counterbox">
+                <p id="CharCount">文字数: 0</p>
+            </div>
+            <div class="Counterbox">
+                <p id="NoSpaceCount">文字数(空白を除く): 0</p>
+            </div>
+            <div class="Counterbox">
+                <p id="SpaceCount">スペース: 0</p>
+            </div>
+            <div class="Counterbox">
+                <p id="LineCount">改行: 0</p>
+            </div>
+        </div>
+        <div class="ToolContainer">
+            <button class="ToolButton" onclick="copy();">コピー</button>
+            <button class="ToolButton" onclick="convertLower();">小文字</button>
+            <button class="ToolButton" onclick="convertUpper();">大文字</button>
+            <button class="ToolButton" onclick="deleteSpace();">スペース削除</button>
+            <button class="ToolButton" onclick="deleteLine();">改行削除</button>
+            <button class="ToolButton" onclick="reset();">リセット</button>
+        </div>
+    </main>
+</html>

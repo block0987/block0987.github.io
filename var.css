@@ -1,0 +1,17 @@
+:root {
+    --color-background: #202020;
+    --color-background2: #2b2b2b;
+    --color-content-background: #f9f9fe;
+    --color-content-hover: #282828;
+    --color-content-current: #2d2d2d;
+    --color-shadow: hsl(0 0% 0% / .24);
+    --color-border: hsl(0 0% 63% / .27);
+    --color-accent: #ffc107;
+    --color-text: #fff;
+    --border: 0 0 0 1px var(--color-border);
+    --shadow: 0px 2px 3px 1px var(--color-shadow);
+    --button: 0 0 0 1px hsl(0 0% 100% / .01) inset, 0 1px hsl(0 0% 100% / .06) inset, 0 -1px hsl(0 0% 100% / .01) inset;
+    --radius: 9px;
+    --radius-half: calc(9px / 2);
+    --ease: cubic-bezier(0, 0, 0, 1) 0.36s;
+}

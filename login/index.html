@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="robots" content="noindex,nofollow,noarchive" />
+        <meta charset="UTF-8">
+        <title>login</title>
+        <script language="JavaScript" type="text/javascript">
+            function nextPage() {
+                pwd = document.login_form.pass.value;
+                location.href = pwd + ".html";
+            }
+        </script>
+            
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form name="login_form">
+            <label for="password">Password:</label>
+            <input type="password" name="pass" id="password">
+            <input type="submit" value="Login" onClick="nextPage();">
+        </form>
+    </body>
+</html>

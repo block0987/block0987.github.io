@@ -34,6 +34,10 @@ header h1{
     border: 1px solid var(--color-border);
     border-radius: 0.5em;
     box-shadow: var(--shadow);
+    transition: var(--ease);
+}
+.collectionWrapper a:hover{
+    background-color: var(--color-background2);
 }
 .collectionCard img{
     width: 100%;

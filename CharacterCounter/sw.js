@@ -1,7 +1,7 @@
 // キャッシュファイルの指定
 var CACHE_NAME = '文字数カウンター';
 var urlsToCache = [
-    'block0987.github.io/CharacterCounter/',
+    'block0987.github.io/CharacterCounter/index.html',
 ];
 
 // インストール処理

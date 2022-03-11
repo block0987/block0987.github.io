@@ -1,7 +1,7 @@
 // キャッシュファイルの指定
-var CACHE_NAME = 'pwa-sample-caches';
+var CACHE_NAME = '文字数カウンター';
 var urlsToCache = [
-    '/poster-keisuke.github.io/',
+    'block0987.github.io/CharacterCounter/',
 ];
 
 // インストール処理

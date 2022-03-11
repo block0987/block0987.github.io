@@ -1,12 +1,15 @@
 {
   "short_name": "文字数カウンター",
   "name": "文字数カウンター",
+  "description": "文字数カウンタ― | 文字数を数えたり、スペース・改行を削除したりできます。",
   "display": "standalone",
-  "start_url": "index.html",
+  "start_url": "/CharacterCounter/index.html",
+  "background_color"  : "#202020",
+  "theme_color"       : "#202020",
   "icons": [
       {
           "src": "../favicon.svg",
-          "sizes": "192x192",
+          "sizes": "150x150",
           "type": "image/svg+xml"
       }
   ]

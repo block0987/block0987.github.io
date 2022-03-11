@@ -1,5 +1,5 @@
 // キャッシュファイルの指定
-var CACHE_NAME = '文字数カウンター';
+var CACHE_NAME = 'ChacracterCounter-chaches';
 var urlsToCache = [
     '/block0987.github.io/CharacterCounter/',
 ];

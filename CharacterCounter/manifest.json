@@ -3,7 +3,7 @@
   "name": "文字数カウンター",
   "description": "文字数カウンタ― | 文字数を数えたり、スペース・改行を削除したりできます。",
   "display": "standalone",
-  "start_url": "block0987.github.io/CharacterCounter/index.html",
+  "start_url": "/block0987.github.io/CharacterCounter/",
   "background_color"  : "#202020",
   "theme_color"       : "#202020",
   "icons": [

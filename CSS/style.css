@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url(https://unpkg.com/modern-css-reset/dist/reset.min.css);
+
+:root,
+[data-theme="light"] {
+    color-scheme: light;
+
+    /* primary */
+    --primary-color-hue: 230;
+    --primary-color-saturation: 100%;
+    --primary-color-lightness: 50%;
+    --primary-color: hsl(var(--primary-color-hue), var(--primary-color-saturation), var(--primary-color-lightness));
+
+    --primary-bg-saturation: 45%;
+    --primary-bg-lightness: 98%;
+    --primary-bg: hsl(var(--primary-color-hue), var(--primary-bg-saturation), var(--primary-bg-lightness));
+
+    --primary-fg-saturation: 9%;
+    --primary-fg-lightness: 10%;
+    --primary-fg: hsl(var(--primary-color-hue), var(--primary-fg-saturation), var(--primary-fg-lightness));
+
+    --primary-border-color-saturation: 9%;
+    --primary-border-color-lightness: 90%;
+    --primary-border-color: hsl(var(--primary-color-hue), var(--primary-border-color-saturation), var(--primary-border-color-lightness));
+    --primary-box-shadow-border: 0 0 0 0.06rem var(--primary-border-color);
+
+    /* secondary */
+    --secondary-color-hue: var(--primary-color-hue);
+    --secondary-color-saturation: 100%;
+    --secondary-color-lightness: 42%;
+    --secondary-color: hsl(var(--secondary-color-hue), var(--secondary-color-saturation), var(--secondary-color-lightness));
+
+    --secondary-bg-saturation: 45%;
+    --secondary-bg-lightness: 97%;
+    --secondary-bg: hsl(var(--secondary-color-hue), var(--secondary-bg-saturation), var(--secondary-bg-lightness));
+
+    --spacer-1: 0.25rem;
+    --spacer-2: 0.5rem;
+    --spacer-3: 1rem;
+    --spacer-4: 2rem;
+    --spacer-5: 4rem;
+    --spacer-6: 8rem;
+    --spacer-7: 16rem;
+
+    /* vw */
+    --font-size-1: max(0.5vw, 12px);
+    --font-size-2: max(0.75vw, 15px);
+    --font-size-3: max(1vw, 18px);
+    --font-size-4: max(1.5vw, 21px);
+    --font-size-5: max(2vw, 24px);
+    --font-size-6: max(4vw, 36px);
+    --font-size-7: max(8vw, 63px);
+
+    --font-family: 'Inter', sans-serif;
+
+    --border-radius: 1.8em;
+
+}
+
+[data-theme="a"] {
+    color-scheme: dark;
+
+    /* primary */
+    --primary-color-hue: 230;
+    --primary-color-saturation: 60%;
+    --primary-color-lightness: 50%;
+    --primary-color: hsl(var(--primary-color-hue), var(--primary-color-saturation), var(--primary-color-lightness));
+
+    --primary-bg-saturation: 18%;
+    --primary-bg-lightness: 9%;
+    --primary-bg: hsl(var(--primary-color-hue), var(--primary-bg-saturation), var(--primary-bg-lightness));
+
+    --primary-fg-saturation: 9%;
+    --primary-fg-lightness: 60%;
+    --primary-fg: hsl(var(--primary-color-hue), var(--primary-fg-saturation), var(--primary-fg-lightness));
+
+    --primary-border-color-saturation: 9%;
+    --primary-border-color-lightness: 18%;
+    --primary-border-color: hsl(var(--primary-color-hue), var(--primary-border-color-saturation), var(--primary-border-color-lightness));
+    --primary-box-shadow-border: 0 0 0 0.06rem var(--primary-border-color);
+
+    /* secondary */
+    --secondary-color-hue: var(--primary-color-hue);
+    --secondary-color-saturation: 60%;
+    --secondary-color-lightness: 42%;
+    --secondary-color: hsl(var(--secondary-color-hue), var(--secondary-color-saturation), var(--secondary-color-lightness));
+
+    --secondary-bg-saturation: 18%;
+    --secondary-bg-lightness: 3%;
+    --secondary-bg: hsl(var(--secondary-color-hue), var(--secondary-bg-saturation), var(--secondary-bg-lightness));
+}
+
+body {
+    background-color: var(--secondary-bg);
+    font-family: var(--font-family);
+    font-size: var(--font-size-2);
+    display: flex;
+    position: static;
+    font-size: var(--font-size-2);
+}
+
+/* メインコンテンツ */
+main {
+    flex: 1;
+    text-align: center;
+    padding: var(--spacer-4);
+}
+
+.card {
+    background-color: var(--primary-bg);
+    padding: var(--spacer-4);
+    margin-bottom: var(--spacer-4);
+    border-radius: var(--border-radius);
+    box-shadow: var(--primary-box-shadow-border);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: var(--font-size-3);
+    font-weight: 600;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: var(--spacer-2) var(--spacer-3);
+    margin: var(--spacer-2);
+    width: 9vw;
+    min-width: 150px;
+    height: 2lh;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}

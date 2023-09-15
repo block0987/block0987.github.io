@@ -97,6 +97,31 @@ body {
     display: flex;
     position: static;
     font-size: var(--font-size-2);
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: var(--spacer-2);
+    background-color: var(--primary-bg);
+    box-shadow: var(--primary-box-shadow-border);
+}
+
+.headerTitle {
+    font-size: var(--font-size-4);
+    font-weight: 600;
+    color: var(--primary-fg);
+    text-decoration: none;
+}
+
+.share-button {
+    border-radius: var(--border-radius);
 }
 
 /* メインコンテンツ */

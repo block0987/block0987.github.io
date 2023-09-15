@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ポモドーロタイマー</title>
+    <meta name="description" content="ポモドーロテクニックをサポートするオンラインタイマー。集中力を高め、効率的な作業をサポートします。">
+    <meta name="keywords" content="ポモドーロタイマー, 簡単, 作業効率, 集中力">
+    <meta name="author" content="block0987">
+    <link rel="canonical" href="https://block0987.github.io/tools/pomodoro.html">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <link rel="icon" href="pomodoro.ico">
+    
+    <link rel="stylesheet" href="pomodoro.css">
+
+    <!-- Google -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9287578847358006"
+        crossorigin="anonymous"></script>
+    <meta name="google-site-verification" content="EztazcCKPxqs1CkgGzxEFU3jDvyAaT26ZmGaVZaOdVo" />
+
+    <!-- OGP -->
+    <meta property="og:title" content="🍅 ポモドーロタイマー">
+    <meta property="og:description" content="ポモドーロテクニックをサポートするオンラインタイマー。集中力を高め、効率的な作業をサポートします。">
+    <meta property="og:url" content="https://block0987.github.io/tools/pomodoro.html">
+    <meta property="og:image" content="pomodoro.png">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="🍅 ポモドーロタイマー">
+    <meta name="twitter:description" content="ポモドーロテクニックをサポートするオンラインタイマー。集中力を高め、効率的な作業をサポートします。">
+    <meta name="twitter:image" content="pomodoro.png">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html" class="headerTitle">
+            <span>Tools</span>
+        </a>
+        <nav>
+            <a href="https://twitter.com/intent/tweet?url=https://block0987.github.io/Tools/pomodoro&text=【時間ツール】簡単、手軽に使えるおしゃれなポモドーロタイマーで、作業を効率化しよう！" target="_blank" class="shareButton">
+                <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://x.com&size=256" alt="Xのアイコン">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <div class="timer">
+                <span id="minutes">25</span>:<span id="seconds">00</span>
+                <span id="pomodoroCount">0</span>
+            </div>
+            <div class="controls">
+                <button id="start">Start</button>
+                <button id="pause">Pause</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="config">
+                <div>
+                    <label for="pomodoroTime">作業時間</label>
+                    <input type="number" id="pomodoroTimerConfig" value="25" min="1" max="120">
+                </div>
+                <div>
+                    <label for="breakTime">休憩時間</label>
+                    <input type="number" id="shortBreakTimeConfig" value="5" min="1" max="60">
+                </div>
+                <div>
+                    <label for="longBreakTime">長休憩時間</label>
+                    <input type="number" id="longBreakTimeConfig" value="15" min="1" max="60">
+                </div>
+                <div>
+                    <label for="longBreakInterval">間隔</label>
+                    <input type="number" id="longBreakIntervalConfig" value="4" min="1" max="10">
+                </div>
+                <div>
+                    <button id="saveConfig">設定する</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="https://block0987.github.io/">
+            <p>© 2023 block0987</p>
+        </a>
+    </footer>
+
+    <script src="/JS/common.js"></script>
+    <script src="pomodoro.js"></script>
+</body>
+
+</html>

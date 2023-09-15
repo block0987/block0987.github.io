@@ -1,3 +1,6 @@
+exclude:
+  - /.well-known/
+
 url: "https://block0987.github.io"
 
 plugins:

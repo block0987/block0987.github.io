@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://block0987.github.io/tools/pomodoro.html">
     <meta name="format-detection" content="telephone=no,address=no,email=no">
     <link rel="icon" href="pomodoro.ico">
-    
+
     <link rel="stylesheet" href="pomodoro.css">
 
     <!-- Google -->
@@ -39,43 +39,47 @@
             <span>Tools</span>
         </a>
         <nav>
-            <a href="https://twitter.com/intent/tweet?url=https://block0987.github.io/tools/pomodoro&text=【時間ツール】簡単、手軽に使えるおしゃれなポモドーロタイマーで、作業を効率化しよう！" target="_blank" class="shareButton">
-                <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://x.com&size=256" alt="Xのアイコン">
+            <a href="https://twitter.com/intent/tweet?url=https://block0987.github.io/tools/pomodoro&text=【時間ツール】簡単、手軽に使えるおしゃれなポモドーロタイマーで、作業を効率化しよう！"
+                target="_blank" class="shareButton">
+                <img src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://x.com&size=256"
+                    alt="Xのアイコン">
             </a>
         </nav>
     </header>
     <main>
-        <div class="card">
-            <div class="timer">
-                <span id="minutes">25</span>:<span id="seconds">00</span>
-                <span id="pomodoroCount">0</span>
+        <div class="cardGroup centerFlex">
+            <div class="card">
+                <div class="timer">
+                    <span id="minutes">25</span>:<span id="seconds">00</span>
+                    <span id="pomodoroCount">0</span>
+                </div>
+                <div class="controls">
+                    <button id="start">Start</button>
+                    <button id="pause">Pause</button>
+                    <button id="reset">Reset</button>
+                </div>
             </div>
-            <div class="controls">
-                <button id="start">Start</button>
-                <button id="pause">Pause</button>
-                <button id="reset">Reset</button>
-            </div>
-        </div>
-        <div class="card">
-            <div class="config">
-                <div>
-                    <label for="pomodoroTime">作業時間</label>
-                    <input type="number" id="pomodoroTimerConfig" value="25" min="1" max="120">
-                </div>
-                <div>
-                    <label for="breakTime">休憩時間</label>
-                    <input type="number" id="shortBreakTimeConfig" value="5" min="1" max="60">
-                </div>
-                <div>
-                    <label for="longBreakTime">長休憩時間</label>
-                    <input type="number" id="longBreakTimeConfig" value="15" min="1" max="60">
-                </div>
-                <div>
-                    <label for="longBreakInterval">間隔</label>
-                    <input type="number" id="longBreakIntervalConfig" value="4" min="1" max="10">
-                </div>
-                <div>
-                    <button id="saveConfig">設定する</button>
+            <div class="card">
+                <div class="config">
+                    <div>
+                        <label for="pomodoroTime">作業時間</label>
+                        <input type="number" id="pomodoroTimerConfig" value="25" min="1" max="120">
+                    </div>
+                    <div>
+                        <label for="breakTime">休憩時間</label>
+                        <input type="number" id="shortBreakTimeConfig" value="5" min="1" max="60">
+                    </div>
+                    <div>
+                        <label for="longBreakTime">長休憩時間</label>
+                        <input type="number" id="longBreakTimeConfig" value="15" min="1" max="60">
+                    </div>
+                    <div>
+                        <label for="longBreakInterval">間隔</label>
+                        <input type="number" id="longBreakIntervalConfig" value="4" min="1" max="10">
+                    </div>
+                    <div>
+                        <button id="saveConfig">設定する</button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,10 +1,6 @@
-exclude:
- - /.well-known/
- - /.github/
-
-url: "https://block0987.github.io" 
+url: "https://block0987.github.io"
 
 plugins:
- - jekyll-seo-tag
- - jekyll-sitemap
- - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed

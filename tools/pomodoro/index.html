@@ -11,7 +11,8 @@
         gtag('js', new Date());
         gtag('config', 'G-4JGF8DEPM0');
     </script>
-    <script defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9287578847358006" crossorigin="anonymous"></script>
+    <script defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9287578847358006"
+        crossorigin="anonymous"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,39 +54,58 @@
         </nav>
     </header>
     <main>
-        <div class="cardGroup centerFlex">
-            <div class="card">
-                <div class="timer">
-                    <span id="minutes">25</span>:<span id="seconds">00</span>
-                    <span id="pomodoroCount">0</span>
+        <div class="content">
+            <div class="timer">
+                <span id="time">25:00</span>
+                <span id="pomodoroCount">0</span>
+                <label for="pomodoroCount">ポモドーロ</label>
+            </div>
+            <div class="controls">
+                <button id="start">Start</button>
+                <button id="pause" disabled>Pause</button>
+                <button id="reset" disabled>Reset</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="config">
+                <div class="configItem">
+                    <label for="pomodoroTime">作業時間</label>
+                    <input type="number" id="pomodoroTimerConfig" value="25" min="1" max="120">
                 </div>
-                <div class="controls">
-                    <button id="start">Start</button>
-                    <button id="pause">Pause</button>
-                    <button id="reset">Reset</button>
+                <div class="configItem">
+                    <label for="breakTime">休憩時間</label>
+                    <input type="number" id="shortBreakTimeConfig" value="5" min="1" max="60">
+                </div>
+                <div class="configItem">
+                    <label for="longBreakTime">長休憩時間</label>
+                    <input type="number" id="longBreakTimeConfig" value="15" min="1" max="60">
+                </div>
+                <div class="configItem">
+                    <label for="longBreakInterval">間隔</label>
+                    <input type="number" id="longBreakIntervalConfig" value="4" min="1" max="10">
+                </div>
+                <div>
+                    <button id="saveConfig">設定する</button>
                 </div>
             </div>
-            <div class="card">
-                <div class="config">
-                    <div>
-                        <label for="pomodoroTime">作業時間</label>
-                        <input type="number" id="pomodoroTimerConfig" value="25" min="1" max="120">
-                    </div>
-                    <div>
-                        <label for="breakTime">休憩時間</label>
-                        <input type="number" id="shortBreakTimeConfig" value="5" min="1" max="60">
-                    </div>
-                    <div>
-                        <label for="longBreakTime">長休憩時間</label>
-                        <input type="number" id="longBreakTimeConfig" value="15" min="1" max="60">
-                    </div>
-                    <div>
-                        <label for="longBreakInterval">間隔</label>
-                        <input type="number" id="longBreakIntervalConfig" value="4" min="1" max="10">
-                    </div>
-                    <div>
-                        <button id="saveConfig">設定する</button>
-                    </div>
+        </div>
+        <div class="content">
+            <div class="description">
+                <div class="descriptionItem">
+                    <h2>ポモドーロタイマーとは？</h2>
+                    <p>ポモドーロタイマーとは、ポモドーロテクニックをサポートするオンラインタイマーです。集中力を高め、効率的な作業をサポートします。</p>
+                </div>
+                <div class="descriptionItem">
+                    <h2>使い方</h2>
+                    <ol>
+                        <li>スタートボタンを押すと、作業時間が開始します。</li>
+                        <li>作業時間が終了すると、休憩時間が開始します。</li>
+                        <li>休憩時間が終了すると、作業時間が開始します。</li>
+                        <li>4回目の作業時間が終了すると、長休憩時間が開始します。</li>
+                        <li>長休憩時間が終了すると、作業時間が開始します。</li>
+                        <li>以上のサイクルを繰り返します。</li>
+                        <li>各時間は、設定から変更することができます。</li>
+                    </ol>
                 </div>
             </div>
         </div>

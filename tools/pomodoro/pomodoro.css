@@ -2,9 +2,18 @@
 @import url("../../CSS/style.css");
 
 .timer {
-    font: monospace;
+    display: flex;
+    flex-direction: column;
+    margin: var(--spacer-4) 0;
+}
+
+#time {
     font-size: var(--font-size-7);
     font-weight: 600;
+    font: monospace;
     font-feature-settings: "tnum";
-    margin: var(--spacer-4) 0;
+}
+
+#pomodoroCount {
+    font-size: var(--font-size-6);
 }

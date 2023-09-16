@@ -3,8 +3,7 @@ const pauseButton = document.getElementById('pause');
 const resetButton = document.getElementById('reset');
 const saveConfigButton = document.getElementById('saveConfig');
 
-const minutesDisplay = document.getElementById('minutes');
-const secondsDisplay = document.getElementById('seconds');
+const timeDisplay = document.getElementById('time');
 const longBreakSpan = document.getElementById('pomodoroCount');
 
 const pomodoroTimeConfig = document.getElementById('pomodoroTimerConfig');
@@ -42,8 +41,7 @@ function updateTimer() {
     }
 
     // ゼロ埋めして表示
-    minutesDisplay.textContent = String(minutes).padStart(2, '0');
-    secondsDisplay.textContent = String(seconds).padStart(2, '0');
+    timeDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0') }`;
 
     document.title = `▶️ ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0') } | ポモドーロタイマー`;
 }
@@ -73,8 +71,7 @@ function resetTimer() {
     clearInterval(timerInterval);
     minutes = parseInt(pomodoroTimeConfig.value);
     seconds = 0;
-    minutesDisplay.textContent = String(minutes).padStart(2, '0');
-    secondsDisplay.textContent = String(seconds).padStart(2, '0');
+    timeDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0') }`;
     startButton.disabled = false;
     pauseButton.disabled = true;
     resetButton.disabled = true;
@@ -86,8 +83,7 @@ function resetTimer() {
 function updateConfig() {
     minutes = parseInt(pomodoroTimeConfig.value);
     seconds = 0;
-    minutesDisplay.textContent = String(minutes).padStart(2, '0');
-    secondsDisplay.textContent = String(seconds).padStart(2, '0');
+    timeDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0') }`;
     longBreakSpan.textContent = pomodoroCount;
 }
 

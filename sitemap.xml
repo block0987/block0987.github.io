@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.block0987.github.io</loc>
-        <changefreq>weekly</changefreq>
-        <lastmod>2023-09-16</lastmod>
-    </url>
-    <url>
-        <loc>https://www.block0987.github.io/tools</loc>
+        <loc>https://www.block0987.github.io/tools/worldclock</loc>
         <changefreq>weekly</changefreq>
         <lastmod>2023-09-16</lastmod>
     </url>
@@ -16,8 +11,28 @@
         <lastmod>2023-09-16</lastmod>
     </url>
     <url>
-        <loc>https://www.block0987.github.io/tools/worldclock</loc>
+        <loc>https://www.block0987.github.io/tools</loc>
         <changefreq>weekly</changefreq>
-        <lastmod>2023-09-16</lastmod>
+        <lastmod>2023-09-17</lastmod>
+    </url>
+    <url>
+        <loc>https://www.block0987.github.io</loc>
+        <changefreq>weekly</changefreq>
+        <lastmod>2023-09-17</lastmod>
+    </url>
+    <url>
+        <loc>https://www.block0987.github.io/blog/003.html</loc>
+        <changefreq>weekly</changefreq>
+        <lastmod>2023-09-17</lastmod>
+    </url>
+    <url>
+        <loc>https://www.block0987.github.io/blog/002.html</loc>
+        <changefreq>weekly</changefreq>
+        <lastmod>2023-09-17</lastmod>
+    </url>
+    <url>
+        <loc>https://www.block0987.github.io/blog/001.html</loc>
+        <changefreq>weekly</changefreq>
+        <lastmod>2023-09-17</lastmod>
     </url>
 </urlset>

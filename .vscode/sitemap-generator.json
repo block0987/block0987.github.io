@@ -11,7 +11,7 @@
       "lastmod",
       "changefreq"
     ],
-    "DefaultChangeFrequency": "weekly",
+    "DefaultChangeFrequency": "daily",
     "TabCharacters": "    ",
     "bIncludeWWW": true,
     "bRemoveFileExtentions": false,

@@ -6,22 +6,12 @@
         <lastmod>2023-09-19</lastmod>
     </url>
     <url>
-        <loc>https://www.block0987.github.io/blog/001.html</loc>
+        <loc>https://www.block0987.github.io/tools/worldclock</loc>
         <changefreq>daily</changefreq>
-        <lastmod>2023-09-19</lastmod>
+        <lastmod>2023-09-16</lastmod>
     </url>
     <url>
-        <loc>https://www.block0987.github.io/blog/002.html</loc>
-        <changefreq>daily</changefreq>
-        <lastmod>2023-09-19</lastmod>
-    </url>
-    <url>
-        <loc>https://www.block0987.github.io/blog/003.html</loc>
-        <changefreq>daily</changefreq>
-        <lastmod>2023-09-19</lastmod>
-    </url>
-    <url>
-        <loc>https://www.block0987.github.io</loc>
+        <loc>https://www.block0987.github.io/tools/pomodoro</loc>
         <changefreq>daily</changefreq>
         <lastmod>2023-09-19</lastmod>
     </url>
@@ -31,13 +21,23 @@
         <lastmod>2023-09-17</lastmod>
     </url>
     <url>
-        <loc>https://www.block0987.github.io/tools/pomodoro</loc>
+        <loc>https://www.block0987.github.io</loc>
         <changefreq>daily</changefreq>
         <lastmod>2023-09-19</lastmod>
     </url>
     <url>
-        <loc>https://www.block0987.github.io/tools/worldclock</loc>
+        <loc>https://www.block0987.github.io/blog/003.html</loc>
         <changefreq>daily</changefreq>
-        <lastmod>2023-09-16</lastmod>
+        <lastmod>2023-09-19</lastmod>
+    </url>
+    <url>
+        <loc>https://www.block0987.github.io/blog/002.html</loc>
+        <changefreq>daily</changefreq>
+        <lastmod>2023-09-19</lastmod>
+    </url>
+    <url>
+        <loc>https://www.block0987.github.io/blog/001.html</loc>
+        <changefreq>daily</changefreq>
+        <lastmod>2023-09-19</lastmod>
     </url>
 </urlset>

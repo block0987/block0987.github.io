@@ -40,37 +40,21 @@
     --border-radius-half: calc(var(--border-radius) / 2);
 }
 
-[data-theme="d ark"] {
+[data-theme="dark"] {
     color-scheme: dark;
 
-    /* primary */
-    --primary-color-hue: 230;
-    --primary-color-saturation: 60%;
-    --primary-color-lightness: 50%;
-    --primary-color: hsl(var(--primary-color-hue), var(--primary-color-saturation), var(--primary-color-lightness));
+    --primary-color: hsl(230, 54%, 54%);
+    --secondary-color: hsl(230, 54%, 63%);
+    --thirtiary-color: hsl(230, 45%, 72%);
+    --primary-bg: hsl(230, 9%, 18%);
+    --secondary-bg: hsl(230, 9%, 12%);
+    --thirtiary-bg: hsl(230, 9%, 27%);
+    --primary-fg: hsl(230, 9%, 98%);
+    --secondary-fg: hsl(230, 9%, 90%);
+    --thirtiary-fg: hsl(230, 9%, 72%);
 
-    --primary-bg-saturation: 18%;
-    --primary-bg-lightness: 9%;
-    --primary-bg: hsl(var(--primary-color-hue), var(--primary-bg-saturation), var(--primary-bg-lightness));
-
-    --primary-fg-saturation: 9%;
-    --primary-fg-lightness: 60%;
-    --primary-fg: hsl(var(--primary-color-hue), var(--primary-fg-saturation), var(--primary-fg-lightness));
-
-    --primary-border-color-saturation: 9%;
-    --primary-border-color-lightness: 18%;
-    --primary-border-color: hsl(var(--primary-color-hue), var(--primary-border-color-saturation), var(--primary-border-color-lightness));
-    --primary-box-shadow-border: 0 0 0 0.06rem var(--primary-border-color);
-
-    /* secondary */
-    --secondary-color-hue: var(--primary-color-hue);
-    --secondary-color-saturation: 60%;
-    --secondary-color-lightness: 42%;
-    --secondary-color: hsl(var(--secondary-color-hue), var(--secondary-color-saturation), var(--secondary-color-lightness));
-
-    --secondary-bg-saturation: 18%;
-    --secondary-bg-lightness: 3%;
-    --secondary-bg: hsl(var(--secondary-color-hue), var(--secondary-bg-saturation), var(--secondary-bg-lightness));
+    --primary-border-color: hsla(230, 9%, 54%, .36);
+    --primary-box-shadow-border: 0 0 0 .06rem var(--primary-border-color);
 }
 
 ol {
@@ -91,7 +75,8 @@ label {
     color: var(--primary-fg);
 }
 
-input[type="text"], input[type="number"] {
+input[type="text"],
+input[type="number"] {
     font-size: var(--font-size-3);
     color: var(--primary-fg);
     border: none;
@@ -216,6 +201,7 @@ footer {
 .card2:hover {
     filter: brightness(0.9);
 }
+
 .card2 img {
     width: 100%;
     height: 12em;

@@ -11,6 +11,9 @@ const shortBreakTimeConfig = document.getElementById('shortBreakTimeConfig');
 const longBreakTimeConfig = document.getElementById('longBreakTimeConfig');
 const longBreakIntervalConfig = document.getElementById('longBreakIntervalConfig');
 
+// タイマーの状態(stop, pomodoro, shortBreak, longBreak)
+let timerStatus = 'stop';
+
 let timerInterval;
 let minutes = parseInt(pomodoroTimeConfig.value);
 let seconds = 0;
@@ -27,6 +30,9 @@ function updateTimer() {
             // タイマーが0になった場合
             clearInterval(timerInterval);
             pomodoroCount++;
+            const audio = new Audio('https://soundeffect-lab.info/sound/button/mp3/description-window1.mp3');
+            audio.play();
+
             longBreakSpan.textContent = pomodoroCount;
             // 休憩時間を設定
             if (pomodoroCount % parseInt(longBreakIntervalConfig.value) === 0) {
